@@ -166,7 +166,7 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 xl:pr-0">
                 <a
-                  href="https://wa.me/971547613616"
+                  href="https://wa.me/971525688238"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ease-in-up hidden w-[110px] rounded-xs bg-[#25D366] py-3 text-center text-base font-medium text-white transition duration-300 hover:bg-[#25D366]/90 xl:block"
@@ -174,7 +174,7 @@ const Header = () => {
                   WhatsApp
                 </a>
                 <a
-                  href="tel:+971547613616"
+                  href="tel:+971525688238"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 ml-4 hidden w-[110px] rounded-xs py-3 text-center text-base font-medium text-white transition duration-300 xl:block"
                 >
                   Call Now

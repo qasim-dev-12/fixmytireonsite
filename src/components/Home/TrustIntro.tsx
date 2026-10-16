@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const PHONE = "+971547613616";
+const PHONE = "+971525688238";
 
 const TrustIntro = () => {
   return (
@@ -51,7 +51,7 @@ const TrustIntro = () => {
                 Call Now
               </a>
               <a
-                href="https://wa.me/971547613616"
+                href="https://wa.me/971525688238"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="custom-btn whatsapp-btn wobble-btn"
