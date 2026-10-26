@@ -21,8 +21,8 @@ layer(base);
 }
 
 @keyframes borderPulse {
-  0%, 100% { border-color: rgba(16, 185, 129, 0.25); }
-  50% { border-color: rgba(16, 185, 129, 0.75); }
+  0%, 100% { border-color: rgba(6, 182, 212, 0.2); }
+  50% { border-color: rgba(6, 182, 212, 0.65); }
 }
 
 @keyframes arrowMove {
@@ -107,7 +107,7 @@ layer(base);
   --color-white: #ffffff;
   --color-black: #121723;
   --color-dark: #1d2430;
-  --color-primary: #10b981;
+  --color-primary: #06b6d4;
   --color-yellow: #fbb040;
   --color-bg-color-dark: #171c28;
 
