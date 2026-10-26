@@ -15,14 +15,51 @@ layer(base);
   50% { transform: translateX(8px); }
 }
 
+@keyframes driveAcross {
+  0%   { left: 0%; opacity: 0; }
+  10%  { opacity: 0.6; }
+  90%  { opacity: 0.6; }
+  100% { left: 96%; opacity: 0; }
+}
+
+@keyframes tyreCycle {
+  0%   { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
+  15%  { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
+  27%  { transform: translate(6px, -4px) scale(1) rotate(20deg); opacity: 1; }
+  33%  { transform: translate(60px, -30px) scale(0.7) rotate(120deg); opacity: 0; }
+  45%  { transform: translate(110px, -50px) scale(0.55) rotate(200deg); opacity: 0; }
+  58%  { transform: translate(0, 0) scale(1) rotate(720deg); opacity: 1; }
+  100% { transform: translate(0, 0) scale(1) rotate(720deg); opacity: 1; }
+}
+
+@keyframes mountPulse {
+  0%, 54%  { opacity: 0; transform: scale(0.85); }
+  58%      { opacity: 0.9; transform: scale(1); }
+  70%      { opacity: 0; transform: scale(1.35); }
+  100%     { opacity: 0; transform: scale(1.35); }
+}
+
+@keyframes armSwing {
+  0%, 12%   { transform: rotate(0deg); }
+  20%, 26%  { transform: rotate(-55deg); }
+  31%       { transform: rotate(-40deg); }
+  40%       { transform: rotate(0deg); }
+  56%       { transform: rotate(-55deg); }
+  60%       { transform: rotate(-70deg); }
+  64%       { transform: rotate(-45deg); }
+  68%       { transform: rotate(-70deg); }
+  73%       { transform: rotate(-55deg); }
+  82%, 100% { transform: rotate(0deg); }
+}
+
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes borderPulse {
-  0%, 100% { border-color: rgba(99, 102, 241, 0.25); }
-  50% { border-color: rgba(99, 102, 241, 0.75); }
+  0%, 100% { border-color: rgba(255, 209, 102, 0.25); }
+  50% { border-color: rgba(255, 209, 102, 0.75); }
 }
 
 @keyframes arrowMove {
@@ -107,7 +144,7 @@ layer(base);
   --color-white: #ffffff;
   --color-black: #121723;
   --color-dark: #1d2430;
-  --color-primary: #6366f1;
+  --color-primary: #FFD166;
   --color-yellow: #fbb040;
   --color-bg-color-dark: #171c28;
 

@@ -5,7 +5,13 @@ import tyreBrands from "@/data/tyreBrands";
 
 const BrandsShowcase = () => {
   return (
-    <section className="py-10 md:py-20 lg:py-28">
+    <section className="relative overflow-hidden py-10 md:py-20 lg:py-28">
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-10 -top-10 hidden animate-[spin_18s_linear_infinite] text-[160px] opacity-[0.04] lg:block"
+      >
+        🛞
+      </span>
       <div className="container">
         <SectionTitle
           title="Genuine Tyres, Fitted Wherever You Are in Dubai"
@@ -18,8 +24,14 @@ const BrandsShowcase = () => {
               key={brand.slug}
               href={`/tyre-brands/${brand.slug}`}
               style={{ animationDelay: `${(i % 6) * 80}ms` }}
-              className="relative block aspect-[4/3] w-full animate-[fadeInUp_0.5s_ease_both] overflow-hidden rounded-2xl bg-white opacity-0 transition-transform duration-300 hover:-translate-y-1"
+              className="group relative block aspect-[4/3] w-full animate-[fadeInUp_0.5s_ease_both] overflow-hidden rounded-2xl bg-white opacity-0 transition-transform duration-300 hover:-translate-y-1"
             >
+              <span
+                aria-hidden="true"
+                className="absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-black/40 text-base text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:animate-[spin_1.2s_linear_infinite] group-hover:opacity-100"
+              >
+                🛞
+              </span>
               {brand.image ? (
                 <Image src={brand.image} alt={brand.title} fill className="object-cover" />
               ) : (

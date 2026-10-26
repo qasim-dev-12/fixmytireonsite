@@ -43,6 +43,23 @@ const Hero = () => {
       id="home"
       className="relative overflow-hidden bg-black pb-12 pt-[110px] md:pb-20 md:pt-[150px]"
     >
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute right-4 bottom-10 hidden animate-[spin_6s_linear_infinite] text-4xl opacity-20 sm:text-5xl lg:block"
+      >
+        🛞
+      </span>
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-4 h-5"
+      >
+        <div className="absolute inset-x-10 bottom-0 h-px bg-primary/15" />
+        <span className="absolute bottom-0 animate-[driveAcross_7s_ease-in-out_infinite] text-lg opacity-0">
+          🚗
+        </span>
+      </div>
+
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="mobile-fade-in-up mb-6 text-2xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl">

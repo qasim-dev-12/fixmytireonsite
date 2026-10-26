@@ -100,15 +100,31 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar border-body-color/50 dark:border-body-color/20 dark:bg-dark absolute right-0 z-30 w-[250px] rounded border-[.5px] bg-white px-6 py-4 duration-300 xl:visible xl:static xl:w-full xl:border-none xl:!bg-transparent xl:p-0 xl:opacity-100 ${
+                  className={`navbar border-body-color/50 dark:border-body-color/20 dark:bg-dark absolute right-0 z-30 w-[250px] origin-top rounded border-[.5px] bg-white px-6 py-4 transition-all duration-300 xl:visible xl:static xl:w-full xl:scale-100 xl:border-none xl:!bg-transparent xl:p-0 xl:opacity-100 xl:transition-none ${
                     navbarOpen
-                      ? "visibility top-full opacity-100"
-                      : "invisible top-[120%] opacity-0"
+                      ? "visibility top-full scale-100 opacity-100"
+                      : "invisible top-[120%] scale-95 opacity-0"
                   }`}
                 >
+                  <div className="mb-3 flex items-center gap-2 border-b border-body-color/10 pb-3 xl:hidden">
+                    <img
+                      src="/images/favicon.png"
+                      alt=""
+                      className="icon-float h-8 w-8 object-contain"
+                    />
+                    <span className="text-dark dark:text-white text-sm font-semibold">
+                      Fix My Tyre <span className="text-primary">On-Site</span>
+                    </span>
+                  </div>
                   <ul className="block xl:flex xl:w-full xl:items-center xl:justify-center xl:gap-x-16">
                     {menuData.map((menuItem, index) => (
-                      <li key={index} className="group relative">
+                      <li
+                        key={index}
+                        className={`group relative xl:!animate-none xl:!opacity-100 ${
+                          navbarOpen ? "animate-[fadeInUp_0.4s_ease_forwards]" : ""
+                        }`}
+                        style={navbarOpen ? { animationDelay: `${index * 70}ms` } : undefined}
+                      >
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
